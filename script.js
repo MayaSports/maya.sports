@@ -1,3 +1,5 @@
+/*Maya Sports - js */
+/*TALLAS CAMISOLAS PARA TABLA*/
 const tallas = {
   fan: {
     S: { largo: "69-71", ancho: "48-51", altura: "162-170", peso: "50-62" },
@@ -122,33 +124,33 @@ function actualizarLinksPedido(version = "", talla = "") {
   if (whatsappFloat) whatsappFloat.href = urlWhatsApp;
 }
 
-/* ROTACIÓN 360 AUTOMÁTICA */
+/* ROTACIÓN 360 */
 const camisolas360 = [
   {
     nombre: "ARGENTINA",
     frames: [
-      "assets/showcase/argentina/front.png",
-      "assets/showcase/argentina/right.png",
-      "assets/showcase/argentina/back.png",
-      "assets/showcase/argentina/left.png"
+      "assets/showcase/argentina/front.webp",
+      "assets/showcase/argentina/right.webp",
+      "assets/showcase/argentina/back.webp",
+      "assets/showcase/argentina/left.webp"
     ]
   },
   {
     nombre: "PORTUGAL",
     frames: [
-      "assets/showcase/portugal/front.png",
-      "assets/showcase/portugal/right.png",
-      "assets/showcase/portugal/back.png",
-      "assets/showcase/portugal/left.png"
+      "assets/showcase/portugal/front.webp",
+      "assets/showcase/portugal/right.webp",
+      "assets/showcase/portugal/back.webp",
+      "assets/showcase/portugal/left.webp"
     ]
   },
   {
     nombre: "BRASIL",
     frames: [
-      "assets/showcase/brasil/front.png",
-      "assets/showcase/brasil/right.png",
-      "assets/showcase/brasil/back.png",
-      "assets/showcase/brasil/left.png"
+      "assets/showcase/brasil/front.webp",
+      "assets/showcase/brasil/right.webp",
+      "assets/showcase/brasil/back.webp",
+      "assets/showcase/brasil/left.webp"
     ]
   }
 ];
@@ -158,11 +160,9 @@ let frameActual = 0;
 let intervalo360 = null;
 
 function precargarFrames360() {
-  camisolas360.forEach(camisola => {
-    camisola.frames.forEach(src => {
-      const img = new Image();
-      img.src = src;
-    });
+  camisolas360[0].frames.forEach(src => {
+    const img = new Image();
+    img.src = src;
   });
 }
 
@@ -232,16 +232,16 @@ function detenerRotacion360() {
 /* GALERÍA DE DETALLES */
 const galerias = {
   jugador: [
-    { img: "assets/detalles/jugador-1.png", title: "Tela liviana con textura", alt: "Detalle de tela versión jugador" },
-    { img: "assets/detalles/jugador-2.png", title: "Corte ajustado", alt: "Detalle de corte versión jugador" },
-    { img: "assets/detalles/jugador-3.png", title: "Logos termosellados", alt: "Detalle de logo versión jugador" },
-    { img: "assets/detalles/jugador-4.png", title: "Acabado profesional", alt: "Detalle de acabado versión jugador" }
+    { img: "assets/detalles/jugador-1.webp", title: "Tela liviana con textura", alt: "Detalle de tela versión jugador" },
+    { img: "assets/detalles/jugador-2.webp", title: "Corte ajustado", alt: "Detalle de corte versión jugador" },
+    { img: "assets/detalles/jugador-3.webp", title: "Logos termosellados", alt: "Detalle de logo versión jugador" },
+    { img: "assets/detalles/jugador-4.webp", title: "Acabado profesional", alt: "Detalle de acabado versión jugador" }
   ],
   fan: [
-    { img: "assets/detalles/fan-1.png", title: "Tela más gruesa y lisa", alt: "Detalle de tela versión fan" },
-    { img: "assets/detalles/fan-2.png", title: "Corte normal", alt: "Detalle de corte versión fan" },
-    { img: "assets/detalles/fan-3.png", title: "Logos bordados", alt: "Detalle de logo versión fan" },
-    { img: "assets/detalles/fan-4.png", title: "Uso casual y cómodo", alt: "Detalle de acabado versión fan" }
+    { img: "assets/detalles/fan-1.webp", title: "Tela más gruesa y lisa", alt: "Detalle de tela versión fan" },
+    { img: "assets/detalles/fan-2.webp", title: "Corte normal", alt: "Detalle de corte versión fan" },
+    { img: "assets/detalles/fan-3.webp", title: "Logos bordados", alt: "Detalle de logo versión fan" },
+    { img: "assets/detalles/fan-4.webp", title: "Uso casual y cómodo", alt: "Detalle de acabado versión fan" }
   ]
 };
 
@@ -322,7 +322,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-/* LOADER PREMIUM */
+/* LOADER */
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
 
@@ -336,7 +336,7 @@ window.addEventListener("load", () => {
     loader.classList.add("hidden");
     document.body.classList.remove("loading");
     document.body.classList.add("loaded");
-  }, 2400);
+  }, 1500);
 });
 
 /* HERO PARALLAX SOLO DESKTOP */

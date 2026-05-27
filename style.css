@@ -1,3 +1,5 @@
+/*Maya Sports - css */
+/*COLORCITOS JAJA */
 :root {
   --red: #ff0026;
   --red-2: #e60022;
@@ -531,7 +533,7 @@ button:hover {
   background: rgba(255,0,38,.11);
 }
 
-/* SECTIONS */
+/* SECCIONESSSS */
 
 .section {
   position: relative;
@@ -661,7 +663,7 @@ button:hover {
   font-size: .7rem;
 }
 
-/* DETAILS */
+/* DETALLESSSS */
 
 .details-section {
   background:
@@ -950,7 +952,7 @@ select:focus {
   letter-spacing: 1px;
 }
 
-/* SOCIAL FLOAT */
+/* BOTONES REDESSOCIALES FLOAT */
 
 .social-float {
   position: fixed;
@@ -1051,7 +1053,7 @@ select:focus {
   line-height: 1;
 }
 
-/* GOLD EFFECT */
+/*EFECTO DEFINE AURA */
 
 .loader p,
 .hero-card p,
@@ -1098,7 +1100,7 @@ select:focus {
   animation: goldSweep 4.5s ease-in-out infinite;
 }
 
-/* ANIMATIONS */
+/* ANIMACIONES */
 
 .reveal {
   opacity: 0;
@@ -1289,7 +1291,7 @@ select:focus {
   }
 }
 
-/* MOBILE FIRST POLISH */
+/* CELULARES */
 
 @media (max-width: 560px) {
   body {
@@ -1566,7 +1568,7 @@ select:focus {
   }
 }
 
-/* PERFORMANCE / ACCESSIBILITY */
+/* ACCESIBILIDAD EN CELULARES */
 
 @media (prefers-reduced-motion: reduce) {
   *,
