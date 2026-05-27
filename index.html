@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Maya Sports | Jerseys</title>
+
+  <meta
+    name="description"
+    content="Guía oficial de tallas Maya Sports. Compara versión Jugador y Fan, encuentra tu talla ideal y pide tu jersey.">
+
+  <meta
+    name="keywords"
+    content="jerseys Guatemala, camisolas de fútbol Guatemala, Maya Sports, versión jugador, versión fan">
+
+  <meta name="author" content="Maya Sports">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ff0026">
+
+  <link rel="icon" type="image/png" href="assets/logo-maya.png">
+
+  <meta property="og:title" content="Maya Sports | Jerseys">
+  <meta property="og:description" content="Encuentra tu talla ideal, compara versión Jugador y Fan, y pide tu jersey.">
+  <meta property="og:image" content="assets/preview.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_GT">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maya Sports | Jerseys">
+  <meta name="twitter:description" content="Encuentra tu talla ideal, compara versión Jugador y Fan, y pide tu jersey.">
+  <meta name="twitter:image" content="assets/preview.png">
+  <meta name="twitter:image:alt" content="Preview oficial de Maya Sports">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="loading">
+
+  <div class="loader" id="loader" aria-label="Cargando Maya Sports">
+    <div class="loader-content">
+      <img src="assets/logo-maya.png" alt="Logo Maya Sports">
+      <h2>MAYA SPORTS</h2>
+      <p>DEFINE AURA</p>
+
+      <div class="loader-bar" aria-hidden="true">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="logo">
+        <img src="assets/logo-maya.png" alt="Logo Maya Sports" class="logo-img">
+        <span><b>MAYA SPORTS</b> · BIENVENIDOS</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#comparador">Versiones</a>
+        <a href="#detalles">Detalles</a>
+        <a href="#asesor">Talla</a>
+        <a href="#guia">Medidas</a>
+      </div>
+    </nav>
+
+    <div class="hero-blur blur-one" aria-hidden="true"></div>
+    <div class="hero-blur blur-two" aria-hidden="true"></div>
+
+    <section class="hero-content reveal" aria-labelledby="hero-title">
+      <p class="eyebrow">GUÍA DE TALLAS · JUGADOR & FAN</p>
+
+      <h1 id="hero-title">Elige tu camisola perfecta</h1>
+
+      <p class="hero-text">
+        Una guía completa para comparar versiones y elegir tu talla ideal antes de hacer tu pedido.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#asesor" class="btn primary">Calcular mi talla</a>
+        <a href="#comparador" class="btn secondary">Ver diferencias</a>
+      </div>
+    </section>
+
+    <aside class="hero-card reveal" aria-label="Vista 360 de camisola Maya Sports">
+      <div class="model-badge" id="modelBadge">ARGENTINA</div>
+
+      <div class="showcase-360" id="showcase360">
+        <div class="float-wrapper">
+          <img
+            id="jerseyShowcase"
+            src="assets/showcase/argentina/front.png"
+            alt="Camisola Argentina Maya Sports vista 360">
+        </div>
+      </div>
+
+      <p>DEFINE AURA</p>
+    </aside>
+
+  </header>
+
+  <main>
+
+    <section id="comparador" class="section reveal" aria-labelledby="comparador-title">
+      <p class="eyebrow">COMPARADOR</p>
+
+      <h2 id="comparador-title">Jugador vs Fan</h2>
+
+      <p class="section-subtitle">
+        Dos versiones con estilos, telas y fits diferentes.
+      </p>
+
+      <div class="compare-grid">
+
+        <article class="version-card">
+          <span class="pill">Versión Jugador</span>
+
+          <h3>Fit profesional</h3>
+
+          <p>
+            Es la que usan los jugadores en cancha. Más liviana, más ajustada y con look deportivo.
+          </p>
+
+          <ul>
+            <li>Tela liviana con textura</li>
+            <li>Corte ajustado / tallado</li>
+            <li>Logos termosellados</li>
+            <li>Ideal para fit atlético</li>
+          </ul>
+        </article>
+
+        <article class="version-card featured">
+          <span class="pill">Versión Fan</span>
+
+          <h3>Cómoda y casual</h3>
+
+          <p>
+            Perfecta para uso diario. Corte más estándar, cómoda y resistente.
+          </p>
+
+          <ul>
+            <li>Tela más gruesa y lisa</li>
+            <li>Corte normal / estándar</li>
+            <li>Logos bordados</li>
+            <li>Ideal para uso casual</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="detalles" class="section details-section reveal" aria-labelledby="detalles-title">
+      <p class="eyebrow">DETALLES REALES</p>
+
+      <h2 id="detalles-title">Observa las diferencias</h2>
+
+      <p class="section-subtitle">
+        Revisa fotos reales de tela, logos, corte y acabado en cada versión.
+      </p>
+
+      <div class="details-tabs" role="tablist" aria-label="Seleccionar versión de detalles">
+        <button class="tab-btn active" type="button" onclick="mostrarGaleria('jugador', this)">Jugador</button>
+        <button class="tab-btn" type="button" onclick="mostrarGaleria('fan', this)">Fan</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <article class="detail-photo" onclick="abrirZoom('assets/detalles/jugador-1.png')">
+          <img loading="lazy" src="assets/detalles/jugador-1.png" alt="Detalle de tela versión jugador">
+          <span>Tela liviana con textura</span>
+        </article>
+
+        <article class="detail-photo" onclick="abrirZoom('assets/detalles/jugador-2.png')">
+          <img loading="lazy" src="assets/detalles/jugador-2.png" alt="Detalle de corte versión jugador">
+          <span>Corte ajustado</span>
+        </article>
+
+        <article class="detail-photo" onclick="abrirZoom('assets/detalles/jugador-3.png')">
+          <img loading="lazy" src="assets/detalles/jugador-3.png" alt="Detalle de logo versión jugador">
+          <span>Logos termosellados</span>
+        </article>
+
+        <article class="detail-photo" onclick="abrirZoom('assets/detalles/jugador-4.png')">
+          <img loading="lazy" src="assets/detalles/jugador-4.png" alt="Detalle de acabado versión jugador">
+          <span>Acabado profesional</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="asesor" class="section soft reveal" aria-labelledby="asesor-title">
+      <p class="eyebrow">ASESOR DE TALLA</p>
+
+      <h2 id="asesor-title">Encuentra tu talla ideal</h2>
+
+      <p class="section-subtitle">
+        Ingresa tus datos y recibe una recomendación rápida.
+      </p>
+
+      <div class="form-box">
+
+        <label for="version">Versión que quieres</label>
+        <select id="version">
+          <option value="fan">Fan</option>
+          <option value="player">Jugador</option>
+        </select>
+
+        <label for="height">Tu altura en cm</label>
+        <input type="number" id="height" placeholder="Ej: 170" inputmode="numeric" />
+
+        <label for="weight">Tu peso en kg</label>
+        <input type="number" id="weight" placeholder="Ej: 70" inputmode="numeric" />
+
+        <label for="fit">¿Cómo te gusta usarla?</label>
+        <select id="fit">
+          <option value="ajustada">Ajustada</option>
+          <option value="normal">Normal</option>
+          <option value="floja">Un poco floja</option>
+        </select>
+
+        <button type="button" onclick="calcularTalla()">Calcular talla</button>
+
+        <div id="resultado" class="resultado" aria-live="polite">
+          Completa tus datos para ver la recomendación.
+        </div>
+
+      </div>
+    </section>
+
+    <section id="guia" class="section reveal" aria-labelledby="guia-title">
+      <p class="eyebrow">MEDIDAS</p>
+
+      <h2 id="guia-title">Tabla interactiva</h2>
+
+      <p class="section-subtitle">
+        Selecciona versión y talla para ver las medidas exactas.
+      </p>
+
+      <div class="selector">
+        <select id="tablaVersion" onchange="mostrarMedidas()" aria-label="Seleccionar versión">
+          <option value="fan">Fan</option>
+          <option value="player">Jugador</option>
+        </select>
+
+        <select id="tablaTalla" onchange="mostrarMedidas()" aria-label="Seleccionar talla">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+          <option value="3XL">3XL</option>
+          <option value="4XL">4XL</option>
+        </select>
+      </div>
+
+      <div id="medidas" class="medidas-card"></div>
+    </section>
+
+    <section class="section cta soft reveal" aria-labelledby="pedido-title">
+      <p class="eyebrow">PEDIDO</p>
+
+      <h2 id="pedido-title">¿Ya sabes tu talla?</h2>
+
+      <p>
+        Haz tu pedido por WhatsApp con tu versión y talla recomendada.
+      </p>
+
+      <div class="buttons-group">
+        <a
+          class="btn primary"
+          id="whatsappPedido"
+          href="https://wa.me/50255134099"
+          target="_blank"
+          rel="noopener noreferrer">
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <img
+        src="assets/logo-maya.png"
+        alt="Logo Maya Sports"
+        class="footer-logo"
+        loading="lazy">
+
+      <p class="footer-kicker">MAYA SPORTS</p>
+
+      <h2>
+        <span class="gold-aura">DEFINE AURA</span>
+      </h2>
+
+      <p class="footer-text">
+        Jerseys para verdaderos fanáticos del fútbol.
+      </p>
+
+      <div class="footer-line"></div>
+
+      <small>© 2026 Maya Sports · Guatemala</small>
+
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" onclick="cerrarZoom()">
+    <button class="close-lightbox" type="button" aria-label="Cerrar imagen ampliada">×</button>
+    <img id="lightboxImg" src="" alt="Vista ampliada">
+  </div>
+
+  <div class="social-float">
+
+    <a
+      class="social-btn whatsapp-btn"
+      id="whatsappFloat"
+      href="https://wa.me/50255134099?text=Hola%20Maya%20Sports,%20quiero%20hacer%20un%20pedido."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp">
+
+      <img src="assets/icons/whatsapp.png" alt="WhatsApp">
+      <span>WhatsApp</span>
+    </a>
+
+    <a
+      class="social-btn instagram-btn"
+      href="https://instagram.com/mayasports.gt"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram">
+
+      <img src="assets/icons/instagram.png" alt="Instagram">
+      <span>Instagram</span>
+    </a>
+
+    <a
+      class="social-btn tiktok-btn"
+      href="https://www.tiktok.com/@mayasports.gt"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="TikTok">
+
+      <img src="assets/icons/tiktok.png" alt="TikTok">
+      <span>TikTok</span>
+    </a>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
