@@ -261,7 +261,7 @@ function mostrarGaleria(tipo, boton) {
   setTimeout(() => {
     grid.innerHTML = galerias[tipo].map(item => `
       <article class="detail-photo" onclick="abrirZoom('${item.img}')">
-        <img src="${item.img}" alt="${item.alt}">
+        <img loading="lazy" src="${item.img}" alt="${item.alt}">
         <span>${item.title}</span>
       </article>
     `).join("");
